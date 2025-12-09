@@ -51,4 +51,3 @@ export default function Skills() {
 }
 
 
-//4:30  gggs
