@@ -1,0 +1,120 @@
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
+import { links } from "@/lib/data";
+import Link from "next/link";
+import clsx from "clsx";
+import { useActiveSectionContext } from "@/context/active-section-context";
+
+export default function Header() {
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
+
+  return (
+    <header className="z-[999] fixed top-4 left-1/2 -translate-x-1/2 w-full flex justify-center">
+      
+      <motion.nav
+        initial={{ y: -40, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        className="backdrop-blur-md border bg-gradient-to-tr from-emerald-800 to-gray border-gray-300/50 shadow-md rounded-full px-6 py-3 sm:px-8 sm:py-3 flex items-center justify-center gap-5 sm:gap-8"
+      >
+        {links.map((link) => (
+          <Link
+            key={link.hash}
+            href={link.hash}
+            onClick={() => {
+              setActiveSection(link.name);
+              setTimeOfLastClick(Date.now());
+            }}
+            className={clsx(
+              "relative text-[0.95rem] font-medium text-white transition-colors duration-300",
+              activeSection === link.name
+                ? "text-white/60"
+                : "hover:text-white/30"
+            )}
+          >
+            {link.name}
+            {activeSection === link.name && (
+              <motion.span
+                layoutId="activeSection"
+                className="absolute bottom-[-6px] left-0 w-full h-[2px] bg-blue-300 rounded-full"
+                transition={{
+                  type: "spring",
+                  stiffness: 350,
+                  damping: 25,
+                }}
+              />
+            )}
+          </Link>
+        ))}
+      </motion.nav>
+    </header>
+  );
+}
+
+
+
+// "use client"
+// import React from 'react'
+// import  {motion } from 'framer-motion'
+// import {links} from '@/lib/data'
+// import Link from 'next/link'
+// import clsx from 'clsx'
+// import { useActiveSectionContext } from '@/context/active-section-context'
+
+
+// export default function Header() {
+// const {activeSection, setActiveSection, setTimeOfLastClick}= useActiveSectionContext();
+
+//   return (
+//   <header className='z-[999] relative bg-amber-100'>
+//     <motion.div className="fixed top-0 left-1/2  h-[4.5rem] w-full rounded-none border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[1.5rem] 
+//     sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full "
+//      initial={{y:-100,x:"-50%",  opacity:0}}
+//       animate={{y:0,x:"-50%", opacity:1}}
+//       > 
+     
+//     </motion.div>
+//     <nav className='flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 
+//     sm:top-[1.7rem] sm:h-[initial] sm:py-0 bg-opacity-30'>
+//       <ul className='flex w-[22rem] flex-wrap items-center 
+//       justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 
+//       sm:flex-nowrap sm:gap-5'>  
+//         {
+//          links.map(link=>(
+//           <motion.li className="h-3/4 flex items-center justify-center relative"
+//            key={link.hash}
+//            initial={{y:-100,  opacity:0}}
+//            animate={{y:0, opacity:1}}
+//           >
+//             <Link  className={clsx("h-3/4 flex items-center justify-center px-3 py-3 border border-white rounded-3xl transition",{"text-gray-950": activeSection === link.name})}
+//             href={link.hash}
+//             onClick={()=>{setActiveSection(link.name)
+//               setTimeOfLastClick(Date.now())
+//             }}>
+//               {link.name}
+//             {link.name === activeSection && ( <motion.span className='bg-gray-100  border-dotted border-1 rounded-full absolute inset-0 -z-10' 
+//             layoutId='activeSection'
+//             transition={{
+//               type: "spring",
+//               stiffness: 380,
+//               damping: 30
+//             }}></motion.span>)}
+//            </Link>
+//           </motion.li>
+//          ))
+//         }
+//       </ul>
+
+//     </nav>
+//   </header>
+//   )
+// }
+// 1:04 we need to change -translate-x-1/2 because we are using framer animate
+// 1:15 done links
+
+
+
+// using custom hook so that context does'nt trouble much. 
+

@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+:root {
+  --global-line-color: #110707; /* Red color example */
+}
