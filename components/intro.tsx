@@ -25,7 +25,7 @@ export default function Intro() {
       >
        
         <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8 sm:gap-10">
-          {/* Profile Image */}
+         
           <motion.div
             className="relative"
             initial={{ scale: 0.9, opacity: 0 }}
@@ -42,7 +42,7 @@ export default function Intro() {
               className="object-cover w-[220px] h-[160px] sm:w-[260px] sm:h-[180px] rounded-xl border-[3px] border-white shadow-md"
             />
 
-            {/* Open to Work Badge */}
+            
             <motion.div
               className="absolute bottom-2 right-2 bg-gradient-to-r from-blue-500 to-aqua-400 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md flex items-center gap-1"
               initial={{ opacity: 0 }}
@@ -93,7 +93,7 @@ export default function Intro() {
           </div>
         </div>
 
-        {/* Buttons Section */}
+      
         <motion.div
           className="flex flex-wrap justify-center sm:justify-start gap-4 mt-8"
           initial={{ opacity: 0, y: 30 }}
@@ -145,4 +145,3 @@ export default function Intro() {
 }
 
 
-//section classes: className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] bg-red-500
