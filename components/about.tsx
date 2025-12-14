@@ -3,14 +3,14 @@ import React from 'react'
 import {motion} from "framer-motion"
 import SectionHeading from './section-heading'
 import { useSectionInView } from '@/lib/hooks'
-export default function About() {
+export default function About(){
 
   const {ref} = useSectionInView("About", 0.7); 
- 
+
   return (
     <motion.section 
     ref = {ref}
-    className='mb-28 max-w-[45rem] text-center leading-8 sm:mb scroll-mt-28'
+    className='mb-28 max-w-180 text-center leading-8 sm:mb scroll-mt-28'
     initial={{opacity:0, y:100}}
     animate={{opacity:1, y:0}}
     transition={{delay:0.175}}
@@ -26,7 +26,7 @@ export default function About() {
             apps to  prototypes — where I focused on writing clean, efficient, and
             maintainable code. My frontend design sense helps me craft intuitive user interfaces,
             I&apos;m a quick learner who loves exploring new technologies. My core skills include{' '}
-            <strong>C++, JavaScript, Next.js,</strong> and <strong>Node.js</strong>. I am
+            <strong> JavaScript,Reat.js, Next.js,</strong> and <strong>Node.js</strong>. I am
             eager to contribute to impactful projects, learn from experienced teams, and grow as a
             developer.
           </p>
