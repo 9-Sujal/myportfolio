@@ -39,12 +39,12 @@ export default function Intro() {
               height={160}
               quality={95}
               priority={true}
-              className="object-cover w-[220px] h-[160px] sm:w-[260px] sm:h-[180px] rounded-xl border-[3px] border-white shadow-md"
+              className="object-cover w-55 h-40 sm:w-65 sm:h-45 rounded-xl border-[3px] border-white shadow-md"
             />
 
             
             <motion.div
-              className="absolute bottom-2 right-2 bg-gradient-to-r from-blue-500 to-aqua-400 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md flex items-center gap-1"
+              className="absolute bottom-2 right-2 bg-linear-to-r from-blue-500 to-aqua-400 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md flex items-center gap-1"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
@@ -120,7 +120,7 @@ export default function Intro() {
           </a>
 
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/sujal-ghorse-1255b0260/"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center justify-center w-11 h-11 bg-white text-gray-800 rounded-full border border-gray-200 shadow-sm
@@ -130,7 +130,7 @@ export default function Intro() {
           </a>
 
           <a
-            href="https://github.com/yourgithub"
+            href="https://github.com/9-Sujal"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center justify-center w-11 h-11 bg-white text-gray-800 rounded-full border border-gray-200 shadow-sm
