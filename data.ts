@@ -1,6 +1,6 @@
 
 import pikachu from "@/public/pikachu.jpg"
-import corpcommentImg from "@/public/corpcomment.png";
+import working from "@/public/working.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import { Project } from "./types";
@@ -122,12 +122,13 @@ export const miniProjectsData: Project[] = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Sujal Blogs",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
-    Link: "",
+      "I worked as a full-stack project for 3 months.Here i write my blogs on web development and tech.",
+    tags: ["React", "Next.js", "MongoDB", "Tailwind", "TypeScript"],
+    imageUrl:working,
+    Link: "https://my-blogs-gamma.vercel.app/",
+    Github: "https://github.com/9-Sujal/BloggingWebsite",
   },
   {
     title: "rmtDev",
