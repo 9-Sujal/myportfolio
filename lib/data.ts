@@ -1,140 +1,126 @@
-
-import pikachu from "@/public/pikachu.jpg"
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 import { Project } from "./types";
+import pikachuImg from "../public/pikachu.jpg";
 
 export const links = [
-  {
-    name: "Home",
-    hash: "#home",
-  },
-  {
-    name: "About",
-    hash: "#about",
-  },
-  {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
-    name: "Minis",
-    hash: "#miniProj",
-   
-  },
-  { 
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
+  { name: "Home", hash: "#home" },
+  { name: "About", hash: "#about" },
+  { name: "Projects", hash: "#projects" },
+  { name: "Minis", hash: "#miniProj" },
+  { name: "Skills", hash: "#skills" },
+  { name: "Contact", hash: "#contact" },
 ] as const;
 
+// Mini Projects
 export const miniProjectsData: Project[] = [
   {
-    id:1,
-    title:"Weather Searching",
-    description:"A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
-    image:pikachu,
-    tags:["next.js","Typescript"],
-    githubLink:"github.com",
-    liveLink:"google.com",
+    id: 1,
+    title: "Weather Searching",
+    description:
+      "A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
+    image: pikachuImg,
+    tags: ["next.js", "Typescript"],
+    githubLink: "github.com",
+    liveLink: "google.com",
   },
-    {
-    id:2,
-    title:"Weather Searching",
-    description:"A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
-    image:pikachu,
-    tags:["next.js","Typescript"],
-     githubLink:"",
-    liveLink:"",
-
+  {
+    id: 2,
+    title: "Weather Searching",
+    description:
+      "A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
+    image: pikachuImg,
+    tags: ["next.js", "Typescript"],
+    githubLink: "",
+    liveLink: "",
   },
-    {
-    id:3,
-    title:"Weather Searching",
-    description:"A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
-    image:pikachu,
-    tags:["next.js","Typescript"],
-     githubLink:"",
-    liveLink:"",
-
+  {
+    id: 3,
+    title: "Weather Searching",
+    description:
+      "A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
+    image: pikachuImg,
+    tags: ["next.js", "Typescript"],
+    githubLink: "",
+    liveLink: "",
   },
-    {
-    id:4,
-    title:"Weather Searching",
-    description:"A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
-    image:pikachu,
-    tags:["next.js","Typescript"],
-     githubLink:"",
-    liveLink:"",
+  {
+    id: 4,
+    title: "Weather Searching",
+    description:
+      "A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
+    image: pikachuImg,
+    tags: ["next.js", "Typescript"],
+    githubLink: "",
+    liveLink: "",
   },
-     {
-    id:5,
-    title:"Weather Searching",
-    description:"A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
-    image:pikachu,
-    tags:["next.js","Typescript"],
-     githubLink:"",
-    liveLink:"",
+  {
+    id: 5,
+    title: "Weather Searching",
+    description:
+      "A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
+    image: pikachuImg,
+    tags: ["next.js", "Typescript"],
+    githubLink: "",
+    liveLink: "",
   },
-     {
-    id:6,
-    title:"Weather Searching",
-    description:"A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
-    image:pikachu,
-    tags:["next.js","Typescript"],
-     githubLink:"",
-    liveLink:"",
+  {
+    id: 6,
+    title: "Weather Searching",
+    description:
+      "A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
+    image: pikachuImg,
+    tags: ["next.js", "Typescript"],
+    githubLink: "",
+    liveLink: "",
   },
-   {
-    id:7,
-    title:"Weather Searching",
-    description:"A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
-    image:pikachu,
-    tags:["next.js","Typescript"],
-     githubLink:"",
-    liveLink:"",
+  {
+    id: 7,
+    title: "Weather Searching",
+    description:
+      "A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
+    image: pikachuImg,
+    tags: ["next.js", "Typescript"],
+    githubLink: "",
+    liveLink: "",
   },
-   {
-    id:8,
-    title:"Weather Searching",
-    description:"A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
-    image:pikachu,
-    tags:["next.js","Typescript"],
-     githubLink:"",
-    liveLink:"",
+  {
+    id: 8,
+    title: "Weather Searching",
+    description:
+      "A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
+    image: pikachuImg,
+    tags: ["next.js", "Typescript"],
+    githubLink: "",
+    liveLink: "",
   },
-   {
-    id:9,
-    title:"Weather Searching",
-    description:"A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
-    image:pikachu,
-    tags:["next.js","Typescript"],
-     githubLink:"",
-    liveLink:"",
-  }
- 
+  {
+    id: 9,
+    title: "Weather Searching",
+    description:
+      "A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
+    image: pikachuImg,
+    tags: ["next.js", "Typescript"],
+    githubLink: "",
+    liveLink: "",
+  },
 ] as const;
 
+// Main Projects
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Sujal Blogs",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
-    Link: "",
+      "I worked as a full-stack project for 3 months. Here I write my blogs on web development and tech.",
+    tags: ["React", "Next.js", "MongoDB", "Tailwind", "TypeScript"],
+    imageUrl: "/working.png",
+    Link: "https://my-blogs-gamma.vercel.app/",
+    Github: "https://github.com/9-Sujal/BloggingWebsite",
   },
   {
     title: "rmtDev",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    imageUrl: "/rmtdev.png",
     Link: "",
   },
   {
@@ -142,11 +128,12 @@ export const projectsData = [
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: "/wordanalytics.png",
     Link: "",
   },
 ] as const;
 
+// Skills
 export const skillsData = [
   "HTML",
   "CSS",
@@ -160,10 +147,7 @@ export const skillsData = [
   "Prisma",
   "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
   "PostgreSQL",
-  "Python",
   "Framer Motion",
 ] as const;

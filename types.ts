@@ -1,5 +1,5 @@
-import { StaticImageData } from "next/image";
-import { links } from "./data";
+
+import { links } from "./lib/data";
 
 
 
@@ -14,9 +14,8 @@ export interface Project {
   id: number
   title: string
   description: string
-  image: StaticImageData 
+  image: string  
   tags: string[]
-  liveLink?: string; 
+  liveLink?: string
   githubLink?: string
-
 }

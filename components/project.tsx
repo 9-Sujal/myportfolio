@@ -24,7 +24,7 @@ export default function Project({ title, description, tags, imageUrl, Link }: Pr
     <motion.div
       ref={ref}
       style={{ scale, opacity, y }}
-      className="bg-gray-100 dark:bg-gray-800
+      className="bg-gray-100 dark:bg-zinc-800 p-2 border border-white border-opacity-10 border-dotted
                  rounded-xl shadow-md hover:shadow-lg transition-all duration-500 
                  overflow-hidden flex flex-col"
     >
@@ -68,7 +68,7 @@ export default function Project({ title, description, tags, imageUrl, Link }: Pr
             href={Link}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-4 inline-block text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline"
+            className="mt-4 inline-block text-sm font-medium text-zinc-200 dark:text-zinc-300 hover:underline"
           >
             View Project →
           </a>

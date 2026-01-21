@@ -31,7 +31,7 @@ export default function MiniProj() {
     >
       <SectionHeading>Mini Projects</SectionHeading>
 
-      <div className="h-[2px] bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-4 mb-10" />
+      <div className="h-0.5 bg-linear-to-r from-transparent via-neutral-700 to-transparent mt-4 mb-10" />
 
       <div
         className={`grid gap-8 transition-all duration-500 ${
@@ -70,7 +70,7 @@ export default function MiniProj() {
           {showAll ? "Show Less" : "Show More"}
         </motion.button>
       </div>
-      <div className="h-[2px] bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 mb-4" />
+      <div className="h-0.5 bg-linear-to-r from-transparent via-neutral-700 to-transparent mt-12 mb-4" />
     </motion.section>
   );
 }
