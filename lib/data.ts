@@ -1,6 +1,9 @@
 import { Project } from "./types";
 import pikachuImg from "../public/pikachu.jpg";
-
+import weatherImg from "../public/weather.png";
+import pizzaImg from "../public/image.png";
+import ebookImg from "../public/ebook.jpg";
+import urlShortImg from "../public/urlshortner.png";
 export const links = [
   { name: "Home", hash: "#home" },
   { name: "About", hash: "#about" },
@@ -14,23 +17,23 @@ export const links = [
 export const miniProjectsData: Project[] = [
   {
     id: 1,
-    title: "Weather Searching",
+    title: "WeatherApp",
     description:
       "A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
-    image: pikachuImg,
-    tags: ["next.js", "Typescript"],
-    githubLink: "github.com",
+    image: weatherImg ,
+    tags: ["next.js", "Typescript", "shadcn/ui"],
+    githubLink: "https://github.com/9-Sujal/weatherApp",
     liveLink: "google.com",
   },
   {
     id: 2,
-    title: "Weather Searching",
+    title: "pizza ordering app",
     description:
-      "A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
-    image: pikachuImg,
-    tags: ["next.js", "Typescript"],
-    githubLink: "",
-    liveLink: "",
+      "A simple and interactive pizza ordering application that allows users to browse menu items, customize their orders, and place them seamlessly.",
+    image: pizzaImg,
+    tags: ["HTML", "javascript", "tailwind"],
+    githubLink: "https://github.com/9-Sujal/Pizza/tree/main",
+    liveLink: "https://pizza-beta-black.vercel.app/",
   },
   {
     id: 3,
@@ -82,26 +85,7 @@ export const miniProjectsData: Project[] = [
     githubLink: "",
     liveLink: "",
   },
-  {
-    id: 8,
-    title: "Weather Searching",
-    description:
-      "A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
-    image: pikachuImg,
-    tags: ["next.js", "Typescript"],
-    githubLink: "",
-    liveLink: "",
-  },
-  {
-    id: 9,
-    title: "Weather Searching",
-    description:
-      "A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
-    image: pikachuImg,
-    tags: ["next.js", "Typescript"],
-    githubLink: "",
-    liveLink: "",
-  },
+ 
 ] as const;
 
 // Main Projects
@@ -116,19 +100,19 @@ export const projectsData = [
     Github: "https://github.com/9-Sujal/BloggingWebsite",
   },
   {
-    title: "rmtDev",
+    title: "FableForge",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: "/rmtdev.png",
+      "Ebook app where the user can read ebooks online. It has a collection of free ebooks and also allows users to upload their own ebooks.",
+    tags: ["React", "TypeScript", "MongoDB", "Tailwind", "Redux"],
+    imageUrl: ebookImg,
     Link: "",
   },
   {
-    title: "Word Analytics",
+    title: "URL Shortener",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: "/wordanalytics.png",
+    tags: ["React", "TypeScript", "Tailwind"],
+    imageUrl: urlShortImg,
     Link: "",
   },
 ] as const;
