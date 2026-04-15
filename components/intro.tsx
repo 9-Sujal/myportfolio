@@ -110,7 +110,7 @@ export default function Intro() {
           </Link>
 
           <a
-            href="/Sujalresume(college).pdf"
+            href="/SujalGhorse.Resume..pdf"
             download
             className="group flex items-center gap-2 px-5 py-3 bg-white text-gray-800 rounded-full border border-gray-200 shadow-sm
           hover:bg-gray-100 hover:scale-105 active:scale-100 transition-all"
