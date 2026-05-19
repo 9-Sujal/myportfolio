@@ -45,46 +45,6 @@ export const miniProjectsData: Project[] = [
     githubLink: "",
     liveLink: "",
   },
-  {
-    id: 4,
-    title: "Weather Searching",
-    description:
-      "A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
-    image: pikachuImg,
-    tags: ["next.js", "Typescript"],
-    githubLink: "",
-    liveLink: "",
-  },
-  {
-    id: 5,
-    title: "Weather Searching",
-    description:
-      "A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
-    image: pikachuImg,
-    tags: ["next.js", "Typescript"],
-    githubLink: "",
-    liveLink: "",
-  },
-  {
-    id: 6,
-    title: "Weather Searching",
-    description:
-      "A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
-    image: pikachuImg,
-    tags: ["next.js", "Typescript"],
-    githubLink: "",
-    liveLink: "",
-  },
-  {
-    id: 7,
-    title: "Weather Searching",
-    description:
-      "A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
-    image: pikachuImg,
-    tags: ["next.js", "Typescript"],
-    githubLink: "",
-    liveLink: "",
-  },
  
 ] as const;
 

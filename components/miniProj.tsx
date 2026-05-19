@@ -27,18 +27,17 @@ export default function MiniProj() {
       ref={ref}
       style={{ opacity, scale }}
       id="miniProj"
-      className="max-w-4xl mx-auto px-4 sm:px-4 lg:px-4 my-20"
+      className="w-full max-w-4xl mx-auto px-4 sm:px-6 my-16 sm:my-20"
     >
       <SectionHeading>Mini Projects</SectionHeading>
 
-      <div className="h-0.5 bg-linear-to-r from-transparent via-neutral-700 to-transparent mt-4 mb-10" />
+      <div className="h-0.5 bg-linear-to-r from-transparent via-neutral-700 to-transparent mt-4 mb-8 sm:mb-10" />
 
+      {/* Always 1 col on mobile, 2 on sm, 3 on lg when expanded */}
       <div
-        className={`grid gap-8 transition-all duration-500 ${
-          showAll
-            ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
-            : "grid-cols-1 sm:grid-cols-2"
-        }`}
+        className={`grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 ${
+          showAll ? "lg:grid-cols-3" : ""
+        } transition-all duration-500`}
       >
         <AnimatePresence>
           {visibleProjects.map((project, index) => (
@@ -48,11 +47,7 @@ export default function MiniProj() {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
-              transition={{
-                duration: 0.5,
-                delay: index * 0.05, // stagger entry
-                ease: "easeInOut",
-              }}
+              transition={{ duration: 0.5, delay: index * 0.05, ease: "easeInOut" }}
             >
               <ProjectCard project={project} />
             </motion.div>
@@ -60,18 +55,18 @@ export default function MiniProj() {
         </AnimatePresence>
       </div>
 
-       <div className="flex justify-center mt-10">
+      <div className="flex justify-center mt-8 sm:mt-10">
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.97 }}
           onClick={() => setShowAll(!showAll)}
-          className="px-6 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-all shadow-md"
+          className="px-5 sm:px-6 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-all shadow-md"
         >
           {showAll ? "Show Less" : "Show More"}
         </motion.button>
       </div>
-      <div className="h-0.5 bg-linear-to-r from-transparent via-neutral-700 to-transparent mt-12 mb-4" />
+
+      <div className="h-0.5 bg-linear-to-r from-transparent via-neutral-700 to-transparent mt-10 sm:mt-12 mb-4" />
     </motion.section>
   );
 }
-

@@ -10,7 +10,6 @@ type ProjectProps = (typeof projectsData)[number];
 export default function Project({ title, description, tags, imageUrl, Link }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
 
-  // Scroll-based subtle animation
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["0.1 1", "0.8 1"],
@@ -28,33 +27,31 @@ export default function Project({ title, description, tags, imageUrl, Link }: Pr
                  rounded-xl shadow-md hover:shadow-lg transition-all duration-500 
                  overflow-hidden flex flex-col"
     >
-      {/* Image Section */}
-      <div className="relative w-full h-48 sm:h-56 md:h-60 lg:h-64">
+      {/* Image — shorter on mobile */}
+      <div className="relative w-full h-40 sm:h-52 md:h-60 lg:h-64">
         <Image
           src={imageUrl}
           alt={title}
           fill
           className="object-cover"
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
       </div>
 
-      {/* Text Content */}
-      <div className="p-5 flex flex-col justify-between ">
+      <div className="p-4 sm:p-5 flex flex-col justify-between">
         <div>
-          <h3 className="text-lg sm:text-xl font-semibold">{title}</h3>
-          <p className="mt-2 font-extralight sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed line-clamp-3">
+          <h3 className="text-base sm:text-lg md:text-xl font-semibold">{title}</h3>
+          <p className="mt-2 text-sm font-extralight text-gray-600 dark:text-gray-300 leading-relaxed line-clamp-3">
             {description}
           </p>
         </div>
 
-        {/* Tags */}
         <ul className="flex flex-wrap gap-2 mt-4">
           {tags.map((tag, index) => (
             <li
               key={index}
               className="bg-black text-white dark:bg-white dark:text-black 
-                         text-[0.65rem] sm:text-[0.7rem] font-medium px-2.5 py-1 
+                         text-[0.6rem] sm:text-[0.65rem] font-medium px-2 py-1 
                          tracking-wide rounded-md hover:scale-105 transition-transform"
             >
               {tag}
@@ -62,7 +59,6 @@ export default function Project({ title, description, tags, imageUrl, Link }: Pr
           ))}
         </ul>
 
-        {/* Link */}
         {Link && (
           <a
             href={Link}

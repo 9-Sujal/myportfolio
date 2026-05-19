@@ -7,18 +7,15 @@ import Skills from "@/components/skills";
 import MiniProj from "@/components/miniProj";
 
 export default function Home() {
-  
   return (
-    <main className=" flex flex-col items-center px-4">
-        <Intro/>
-        <SectionDivider/>
-        <About/>
-        <Projects/>
-        <MiniProj/>
-        <Skills/>
-        <Contact/>
-
-      
+    <main className="flex flex-col items-center px-4 sm:px-6 overflow-x-hidden">
+      <Intro />
+      <SectionDivider />
+      <About />
+      <Projects />
+      <MiniProj />
+      <Skills />
+      <Contact />
     </main>
   );
 }

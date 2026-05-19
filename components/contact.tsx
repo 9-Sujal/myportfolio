@@ -12,9 +12,7 @@ export default function Contact() {
     const message = (e.target as HTMLFormElement).message.value;
 
     const subject = encodeURIComponent("Message from Portfolio");
-    const body = encodeURIComponent(
-      `From: ${email}\n\nMessage:\n${message}`
-    );
+    const body = encodeURIComponent(`From: ${email}\n\nMessage:\n${message}`);
 
     window.location.href = `mailto:sujalghorse9@gmail.com?subject=${subject}&body=${body}`;
   }
@@ -22,13 +20,16 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)]"
+      className="mb-16 sm:mb-28 w-full max-w-152 mx-auto px-4 sm:px-0 scroll-mt-28"
     >
       <SectionHeading>Contact me</SectionHeading>
 
-      <p className="text-gray-700 -mt-6">
+      <p className="text-gray-300 text-sm sm:text-base -mt-4 sm:-mt-6">
         Please contact me directly at{" "}
-        <a href="mailto:sujalghorse9@gmail.com">
+        <a
+          href="mailto:sujalghorse9@gmail.com"
+          className="underline hover:text-white transition-colors"
+        >
           sujalghorse9@gmail.com
         </a>{" "}
         or through this form.
@@ -36,26 +37,26 @@ export default function Contact() {
 
       <form
         onSubmit={handleSubmit}
-        className="mt-10 rounded-lg border border-black/10 flex flex-col"
+        className="mt-8 sm:mt-10 rounded-lg border border-black/10 flex flex-col gap-3"
       >
         <input
           name="email"
           type="email"
           placeholder="Your email"
           required
-          className="h-15 rounded-lg border border-black border-dotted p-4"
+          className="h-12 sm:h-14 rounded-lg border border-black border-dotted p-4 bg-transparent text-white placeholder:text-gray-400 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-emerald-400"
         />
 
         <textarea
           name="message"
           placeholder="Your message"
           required
-          className="h-52 my-3 rounded-lg border border-black p-4 border-dotted"
+          className="h-44 sm:h-52 rounded-lg border border-black p-4 border-dotted bg-transparent text-white placeholder:text-gray-400 text-sm sm:text-base resize-none focus:outline-none focus:ring-2 focus:ring-emerald-400"
         />
 
         <button
           type="submit"
-          className="group flex h-12 w-32 bg-gray-900 text-white rounded-full items-center justify-center gap-2 hover:scale-110 transition"
+          className="group self-start flex h-11 sm:h-12 px-6 sm:w-32 bg-gray-900 text-white rounded-full items-center justify-center gap-2 hover:scale-110 transition border border-gray-700"
         >
           Send <FaPaperPlane className="text-xs opacity-70" />
         </button>
