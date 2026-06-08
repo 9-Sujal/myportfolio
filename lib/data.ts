@@ -1,5 +1,5 @@
 import { Project } from "./types";
-import pikachuImg from "../public/pikachu.jpg";
+
 import weatherImg from "../public/weather.png";
 import pizzaImg from "../public/image.png";
 import ebookImg from "../public/ebook.jpg";
@@ -23,7 +23,7 @@ export const miniProjectsData: Project[] = [
     image: weatherImg ,
     tags: ["next.js", "Typescript", "shadcn/ui"],
     githubLink: "https://github.com/9-Sujal/weatherApp",
-    liveLink: "google.com",
+    liveLink: "https://weather-app-lac-eight-11.vercel.app/",
   },
   {
     id: 2,
@@ -37,10 +37,10 @@ export const miniProjectsData: Project[] = [
   },
   {
     id: 3,
-    title: "Weather Searching",
+    title: "URL Shortener",
     description:
-      "A simple and interactive weather application that allows users to search for real-time weather information of any city worldwide.",
-    image: pikachuImg,
+      "A simple and interactive URL shortener application that allows users to create short links for long URLs.",
+    image: urlShortImg,
     tags: ["next.js", "Typescript"],
     githubLink: "",
     liveLink: "",
@@ -68,10 +68,10 @@ export const projectsData = [
     Link: "",
   },
   {
-    title: "URL Shortener",
+    title: "RTCEDITOR",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "TypeScript", "Tailwind"],
+      "Real time code editor where users can collaborate and code together in real time. It has a built-in code editor and also allows users to chat with each other.",
+    tags: ["React", "JavaScript", "socket.io", "Node.js", "Express"],
     imageUrl: urlShortImg,
     Link: "",
   },
