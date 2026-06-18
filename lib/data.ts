@@ -56,7 +56,7 @@ export const projectsData = [
       "I worked as a full-stack project for 3 months. Here I write my blogs on web development and tech.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "TypeScript"],
     imageUrl: "/working.png",
-    Link: "https://my-blogs-gamma.vercel.app/",
+    Link: "https://sujalblogs.onrender.com/",
     Github: "https://github.com/9-Sujal/BloggingWebsite",
   },
   {
