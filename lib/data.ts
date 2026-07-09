@@ -74,7 +74,7 @@ export const projectsData = [
       "Real time code editor where users can collaborate and code together in real time. It has a built-in code editor and also allows users to chat with each other.",
     tags: ["React", "JavaScript", "socket.io", "Node.js", "Express"],
     imageUrl: Rtceditor,
-    Link: "https://rtc-editor.vercel.app/)",
+    Link: "https://rtc-editor.vercel.app/",
     Github:"https://github.com/9-Sujal/RTCEditor"
   },
 ] as const;
