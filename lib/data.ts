@@ -66,7 +66,7 @@ export const projectsData = [
       "Ebook app where the user can read ebooks online. It has a collection of free ebooks and also allows users to upload their own ebooks.",
     tags: ["React", "TypeScript", "MongoDB", "Tailwind", "Redux"],
     imageUrl: ebookImg,
-    Link: "",
+    Link: "https://www.fableforge.website/",
   },
   {
     title: "RTCEDITOR",
