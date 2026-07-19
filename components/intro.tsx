@@ -108,7 +108,7 @@ export default function Intro() {
             <BsArrowRight className="transition-transform group-hover:translate-x-1" />
           </Link>
   <a
-            href="/SujalGhorse.Resume..pdf"
+            href="/SujalGhorse.Resume.pdf"
             download
             className="group flex items-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 bg-white text-gray-800 rounded-full border border-gray-200 text-sm shadow-sm
               hover:bg-gray-100 hover:scale-105 active:scale-100 transition-all"
